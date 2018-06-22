@@ -1,35 +1,35 @@
 'use strict';
 
-// var answersCorrect = 0;
-// var yesNoArray = [
-//     ['Question #1: Pugs originated in China. True or false?', ['true', 't'] , 'Correct!', 'Incorrect!'],
-//     ['Question #2: A group of crows is called a "murder", a group of pugs is called a "herd." True or false?', ['false', 'f'] , 'Correct!', 'Incorrect!'],
-// ];
+var answersCorrect = 0;
+var yesNoArray = [
+    ['Question #1: Pugs originated in China. True or false?', ['true', 't'] , 'Correct!', 'Incorrect!'],
+    ['Question #2: A group of crows is called a "murder", a group of pugs is called a "herd." True or false?', ['false', 'f'] , 'Correct!', 'Incorrect!'],
+];
 
-// //functionality for the above true/false questions 
-// function yesNoGame(question, answer, correctAlert, incorrectAlert) {
-//     var userAnswer = prompt(question).toLowerCase();
+//functionality for the above true/false questions 
+function yesNoGame(question, answer, correctAlert, incorrectAlert) {
+    var userAnswer = prompt(question).toLowerCase();
     
-//     if(answer.includes(userAnswer)) { //answer.includes is what is running throught the array checking variable userAnswer, the variable passed into the parens, against variable answer. 
-//         answersCorrect++;
-//         alert('Correct!');
-//     }
-//     else {
-//             alert('Incorrect!');
-//         }
-//     }
+    if(answer.includes(userAnswer)) { //answer.includes is what is running throught the array checking variable userAnswer, the variable passed into the parens, against variable answer. 
+        answersCorrect++;
+        alert('Correct!');
+    }
+    else {
+            alert('Incorrect!');
+        }
+    }
 
-// for (var i = 0; i < yesNoArray.length; i++) {
-//         yesNoGame(yesNoArray[i][0], yesNoArray[i][1], yesNoArray[i][2], yesNoArray[i][3]);
-//         //This For Loop is looping through the array of arrays questions/options/feedback hitting each of the three items in the nested arrays. 
-//         //That first parameter, yesNoArray[i][0] ---> is the  question in the array
-//         //The second parameter, yesNoArray[i][1]---> is the ['True', 'False']
-//         //The third parameter, yesNoArray[i][2]---> is the 'Correct1', 'Incorrect!' 
-// }
+for (var i = 0; i < yesNoArray.length; i++) {
+        yesNoGame(yesNoArray[i][0], yesNoArray[i][1], yesNoArray[i][2], yesNoArray[i][3]);
+        //This For Loop is looping through the array of arrays questions/options/feedback hitting each of the three items in the nested arrays. 
+        //That first parameter, yesNoArray[i][0] ---> is the  question in the array
+        //The second parameter, yesNoArray[i][1]---> is the ['True', 'False']
+        //The third parameter, yesNoArray[i][2]---> is the 'Correct1', 'Incorrect!' 
+}
 
 
-//functionality for the below numeric input questions 
-//Question #3
+// functionality for the below numeric input questions 
+// Question #3
 var correctAnswer = 4;
 var attempts = 3;
 
